@@ -6,69 +6,85 @@ $main-color: #2c2141;
 
 body {
   margin: 0;
+  background-image: url('https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_900,q_75,w_1600/v1/clients/lasvegas/holiday_header_df388da4-5c05-44bf-9424-cf6ba2c194f5.jpg');
 }
 
 .wrap {
-  width: 80%;
-  margin: 5vh auto 0;
-  font-family: $main-color;
+  width: 70%;
+  margin: 5vh auto;
+  font-family: $default-font;
   background-color: $main-color;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: white;
+      font-family: $special-font;
+      padding: 16px;
+    }
  }
 
- 
- h1 {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px;
- }
- .game {
+.game {
   display: flex;
   margin-bottom: 3vh;
- 
+    .color {
+      height: 30vh;
+      flex-grow: 1;
+      margin: 10px;
+      border: 3px solid gray;
+   }
  }
- .game div {
-  height: 30vh;
-  flex-grow: 1;
-  margin: 10px;
- border: 3px solid gray;
- }
  
- .play {
+.play {
   text-align: center;
+    .input  {
+      height: 60px;
+      font-size: 20px;
+      padding: 20px;
+      width: 400px;
+      border: 3px solid black;
+      text-align: center;
+      margin-right: 16px;
+    }
+    .button {
+      margin-top: 16px;
+      width: 40%;
+      height: 90px;
+      text-align: center;
+      padding: 20px 60px;
+      font-size: 20px;
+      font-family: $special-font;
+      text-transform: uppercase;
+      background-color: violet;
+      border: solid 3px blueviolet;
+      color: white;
+      cursor: pointer;
+      letter-spacing: 6px;
+    }
  }
  
- .play input{
-  height: 90px;
-  font-size: 40px;
-  padding: 20px;
-  width: 400px;
-  border: 3px solid black;
-  text-align: center;
- }
- .play button {
-  width: 40%;
-  height:90px;
-  text-align: center;
-  padding: 20px 60px;
-  font-size: 40px;
-  text-transform: uppercase;
-  background-color: #333;
-  border: none;
-  color: white;
-  cursor: pointer;
-  letter-spacing: 6px;
- }
- 
- .panel {
+.panel {
   margin: 80px 0 40px;
-  font-size: 26px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
  }
- 
- .panel, .score {
-  font-size: 26px;
+
+ .number {
+   margin-right: 5px;
  }
- .panel span, .score span {
-  font-weight: bold;
- }
+    
+.panel, .score {
+    padding: 16px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.panel span, .score span {
+      font-weight: bold;
+      color: white;
+      text-align: center;
+}
  
  
